@@ -8,7 +8,7 @@ import Banner from "../assets/Images/banner.mp4"
 // Component Imports
 import HighlightText from "../components/core/HomePage/HighlightText"
 import CTAButton from "../components/core/HomePage/Button"
-import Footer from "../components/Common/Footer"
+import Footer from "../components/common/Footer"
 import CodeBlocks from "../components/core/HomePage/CodeBlocks"
 import ExploreMore from "../components/core/HomePage/ExploreMore"
 import InstructorSection from "../components/core/HomePage/InstructorSection"
