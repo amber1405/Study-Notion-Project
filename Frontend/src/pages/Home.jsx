@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import Banner from "../assets/Images/banner.mp4"
 
 // Component Imports
-import HighlightText from "../components/core/HomePage/HighlightText"
+import HighlightText from "../components/core/Homepage/HighlightText"
 import CTAButton from "../components/core/HomePage/Button"
 import Footer from "../components/common/Footer"
 import CodeBlocks from "../components/core/HomePage/CodeBlocks"
