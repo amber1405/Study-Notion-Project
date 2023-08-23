@@ -7,13 +7,13 @@ import Banner from "../assets/Images/banner.mp4"
 
 // Component Imports
 import HighlightText from "../components/core/Homepage/HighlightText"
-import CTAButton from "../components/core/HomePage/Button"
+import CTAButton from "../components/core/Homepage/Button"
 import Footer from "../components/common/Footer"
-import CodeBlocks from "../components/core/HomePage/CodeBlocks"
-import ExploreMore from "../components/core/HomePage/ExploreMore"
-import InstructorSection from "../components/core/HomePage/InstructorSection"
-import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection"
-import TimelineSection from "../components/core/HomePage/Timeline"
+import CodeBlocks from "../components/core/Homepage/CodeBlocks"
+import ExploreMore from "../components/core/Homepage/ExploreMore"
+import InstructorSection from "../components/core/Homepage/InstructorSection"
+import LearningLanguageSection from "../components/core/Homepage/LearningLanguageSection"
+import TimelineSection from "../components/core/Homepage/Timeline"
 import ReviewSlider from "../components/common/ReviewSlider"
 
 function Home() {
