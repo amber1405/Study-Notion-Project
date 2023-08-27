@@ -150,7 +150,7 @@ export function resetPassword(password, confirmPassword, token, navigate) {
       const response = await apiConnector("POST", RESETPASSWORD_API, {
         password,
         confirmPassword,
-        token,
+        token
       })
 
       console.log("RESETPASSWORD RESPONSE............", response)

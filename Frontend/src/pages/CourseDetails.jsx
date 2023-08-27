@@ -16,6 +16,9 @@ import { BuyCourse } from "../services/operations/studentFeaturesAPI"
 import GetAvgRating from "../utils/avgRating"
 import Error from "./Error"
 
+function fetchDate(){
+  console.log(formatDate());
+}
 function CourseDetails() {
   const { user } = useSelector((state) => state.profile)
   const { token } = useSelector((state) => state.auth)
@@ -157,6 +160,7 @@ function CourseDetails() {
                 <p className="flex items-center gap-2">
                   {" "}
                   <BiInfoCircle /> Created at {formatDate(createdAt)}
+                  <button onClick={fetchDate}>Submit</button>
                 </p>
                 <p className="flex items-center gap-2">
                   {" "}
