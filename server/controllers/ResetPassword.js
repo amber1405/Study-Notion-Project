@@ -2,7 +2,7 @@ const User = require("../models/User")
 const mailSender = require("../utils/mailSender")
 const bcrypt = require("bcrypt")
 const crypto = require("crypto")
-require('dotenv').config();
+
 
 exports.resetPasswordToken = async (req, res) => {
   try {
@@ -27,8 +27,9 @@ exports.resetPasswordToken = async (req, res) => {
     console.log("DETAILS", updatedDetails)
 
     // const url = `http://localhost:5173/update-password/${token}`
-    const url=process.env.RESET_PASSWORD_URL+`/update-password/${token}`;
-    console.log("Reset Password Url",process.env.RESET_PASSWORD_URL);
+    const url= `https://study-notion-pi.vercel.app/update-password/${token}`;
+    console.log("url",url);
+    // console.log("Reset Password Url",process.env.RESET_PASSWORD_URL);
 
 
     await mailSender(
