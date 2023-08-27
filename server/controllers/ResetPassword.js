@@ -25,8 +25,8 @@ exports.resetPasswordToken = async (req, res) => {
     )
     console.log("DETAILS", updatedDetails)
 
-    const url = process.env.RESET_PASSWORD_URL+`/update-password/${token}`
-    // const url =  `https://study-notion-pi.vercel.app/update-password/${token}`
+    // const url = process.env.RESET_PASSWORD_URL+`/update-password/${token}`
+    const url =  `https://study-notion-pi.vercel.app/update-password/${token}`
     console.log("url",url);
     console.log("token",token);
 
