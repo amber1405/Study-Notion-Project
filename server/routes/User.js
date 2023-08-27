@@ -9,7 +9,7 @@ const {
   sendotp,
   changePassword,
 } = require("../controllers/Auth")
-const {resetPasswordToken,resetPassword} = require("../controllers/ResetPassword")
+const {resetPasswordToken,resetPassword} = require("../controllers/ResetPassword");
 
 const { auth } = require("../middlewares/auth")
 
@@ -39,7 +39,7 @@ router.post("/changepassword", auth, changePassword)
 router.post("/reset-password-token", resetPasswordToken)
 
 // Route for resetting user's password after verification
-router.post("/update-password", resetPassword)
+router.post("/reset-password", resetPassword)
 
 // Export the router for use in the main application
-module.exports = router
+module.exports = router;
