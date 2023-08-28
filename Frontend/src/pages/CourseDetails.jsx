@@ -101,10 +101,6 @@ function CourseDetails() {
     studentsEnrolled,
     createdAt,
   } = response.data?.courseDetails
-  console.log("courseDetails",response.data?.courseDetails);
-  function fetchDate(){
-    console.log(formatDate(createdAt));
-  }
 
   const handleBuyCourse = () => {
     if (token) {
@@ -162,7 +158,6 @@ function CourseDetails() {
                 <p className="flex items-center gap-2">
                   {" "}
                   <BiInfoCircle /> Created at {formatDate(createdAt)}
-                  <button onClick={fetchDate}>Submit</button>
                 </p>
                 <p className="flex items-center gap-2">
                   {" "}
