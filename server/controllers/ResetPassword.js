@@ -31,12 +31,15 @@ exports.resetPasswordToken = async (req, res) => {
 
     // console.log("Reset Password Url",process.env.RESET_PASSWORD_URL);
 
-
-    await mailSender(
-      email,
-      "Password Reset",
-      `Your Link for email verification is ${url}. Please click this url to reset your password.`
-    )
+    try {
+      await mailSender(
+        email,
+        "Password Reset",
+        `Your Link for email verification is ${url}. Please click this url to reset your password.`
+      )
+    } catch (error) {
+      console.log("try block",error);
+    }
 
     res.json({
       success: true,

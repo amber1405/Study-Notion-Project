@@ -16,9 +16,7 @@ import { BuyCourse } from "../services/operations/studentFeaturesAPI"
 import GetAvgRating from "../utils/avgRating"
 import Error from "./Error"
 
-function fetchDate(){
-  console.log(formatDate());
-}
+
 function CourseDetails() {
   const { user } = useSelector((state) => state.profile)
   const { token } = useSelector((state) => state.auth)
@@ -103,6 +101,10 @@ function CourseDetails() {
     studentsEnrolled,
     createdAt,
   } = response.data?.courseDetails
+  console.log("courseDetails",response.data?.courseDetails);
+  function fetchDate(){
+    console.log(formatDate(createdAt));
+  }
 
   const handleBuyCourse = () => {
     if (token) {
