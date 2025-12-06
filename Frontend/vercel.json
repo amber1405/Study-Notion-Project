@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "engines": {
+    "node": "20.x"
+  }
+}
